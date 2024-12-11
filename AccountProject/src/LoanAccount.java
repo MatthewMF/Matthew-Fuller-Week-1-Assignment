@@ -82,7 +82,7 @@ public class LoanAccount extends Account{
         else
         {
             outstandingBal = (LBal + intrest) - _amount; 
-            System.out.println("You have an outstanding balance of $" + outstandingBal); //the bank owes money (probably)
+            System.out.println("You have an outstanding balance of $" + outstandingBal); //if negative, the bank owes money (I think thats how it works)
             return true;
         }
     }
